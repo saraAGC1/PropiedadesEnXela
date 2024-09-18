@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andorra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Aquí puedes vincular un archivo CSS personalizado -->
+    <!-- Importación de fuentes de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Raleway', sans-serif;
+            color: #1f28a2; /* Color azul oscuro para los títulos */
+        }
+
+        .header-content h1 {
+            text-align: center;
+        }
+
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.25rem; /* Tamaño de fuente más grande para los párrafos */
+            text-align: left; /* Texto alineado a la izquierda */
+        }
+
+        .navbar-custom {
+            background-image: url('img/Banner-Nuevo.png'); /* Imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            padding: 0.5rem 1rem; /* Ajusta el padding según sea necesario */
+        }
+
+        .navbar-custom .navbar-brand {
+            color: white;
+        }
+
+        .navbar-custom .navbar-toggler-icon {
+            background-image: url('img/Logo Azul Png.png'); /* Icono de la hamburguesa en blanco */
+        }
+
+        .header-content {
+            background-color: #c4cdd7; /* Color de fondo suave */
+            padding: 2rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .header-content img {
+            max-width: 200px; /* Ajusta el tamaño máximo del logo */
+            height: auto;
+        }
+
+        .section {
+            padding: 2rem;
+            background-color: #ffffff; /* Fondo blanco para la sección */
+            text-align: left; /* Texto alineado a la izquierda */
+        }
+
+        .section-background {
+            background-color: #c4cdd7;
+        }
+
+       /* Ajustes para el contenedor del carrusel */
+.carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto; /* Permite que el contenedor ajuste su altura al contenido */
+}
+
+/* Ajustes para las imágenes del carrusel */
+.carousel-item img {
+    max-height: 950px; /* Ajusta la altura máxima de la imagen */
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    object-fit: cover; /* Ajusta la imagen al contenedor sin distorsión */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+        .proximamente {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2rem; /* Tamaño de fuente grande */
+            color: #1f28a2; /* Color azul oscuro */
+            text-align: center;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación con imagen de fondo y texto en blanco -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/Logo Azul Png.png" alt="Icono" style="max-width: 30px; height: auto;">
+            Andorra
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProyectos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Proyectos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownProyectos">
+                        <li><a class="dropdown-item" href="villa-rosel.html">Villa Rosel</a></li>
+                        <li><a class="dropdown-item" href="plaza-cani.html">Plaza Cañi</a></li>
+                        <li><a class="dropdown-item" href="colonia-beneficio.html">Colonia El Beneficio</a></li>
+                        <li><a class="dropdown-item" href="bella-terra.html">Bella Terra</a></li>
+                        <li><a class="dropdown-item" href="andorra.html">Andorra</a></li>
+                        <li><a class="dropdown-item" href="villa-cavalo.html">Villa Cavalo</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownOtrasPropiedades" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Otras Propiedades
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownOtrasPropiedades">
+                        <li><a class="dropdown-item" href="lote-villa-soler.html">Lote en condominio Villa Soler</a></li>
+                        <li><a class="dropdown-item" href="lote-prados-san-lucas.html">Lote en Condominio Prados de San Lucas</a></li>
+                        <li><a class="dropdown-item" href="lote-prados-del-encinal.html">Lote en Residenciales Prados del Encinal</a></li>
+                        
+                       
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#quienes-somos"> Te encuentras en Andorra </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Fin de la barra de navegación -->
+
+    <!-- Sección Andorra -->
+    <section class="header-content">
+        <img src="img/Logo (1).png" alt="Logo de Andorra">
+        <h1></h1>
+    </section>
+    <!-- Fin de la sección de encabezado -->
+
+    <!-- Mensaje de Próximamente -->
+    <div class="proximamente">
+        Próximamente
+    </div>
+    <!-- Fin del mensaje de Próximamente -->
+
+     <!-- Sección de carrusel de imágenes -->
+ <section class="section section-background">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          
+            <div class="carousel-item active">
+                <img src="img/Post - Próximamente nuevo proyecto andorra.png" class="d-block w-100" alt="Imagen 1">
+            </div>
+          
+           
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

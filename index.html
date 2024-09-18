@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades en Xela</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Aquí puedes vincular un archivo CSS personalizado -->
+    <!-- Importación de fuentes de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        .whatsapp_float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+
+        .whatsapp_float img {
+            width: 50px;
+            height: 50px;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 5rem; /* Aumento del tamaño de la portada */
+        }
+
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 4.5rem; /* Aumento del tamaño del texto */
+        }
+
+        .header-content {
+            background-image: url('img/Fondoo.png');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-text {
+            padding: 2rem 4rem;
+        }
+
+        .navbar-brand img {
+            width: 75px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .social-icons img {
+            max-width: 40px; /* Tamaño máximo de los iconos de redes sociales */
+            height: auto;
+            margin: 0 0.5rem; /* Espacio entre los iconos */
+        }
+
+        .btn-primary {
+            background-color: #1f28a2;
+            border-color: #1f28a2;
+            font-size: 2.5rem; /* Aumento del tamaño del botón */
+            padding: 1.5rem 3rem;
+        }
+
+        .btn-primary:hover {
+            background-color: #002f69;
+            border-color: #002f69;
+        }
+        .contact-info .icon {
+            max-width: 20px; /* Tamaño máximo de los iconos */
+            height: auto;
+            margin-right: 0.5rem; /* Espacio entre el icono y el texto */
+            vertical-align: middle;
+        }
+
+        .contact-image {
+            max-width: 100%; /* Asegura que la imagen no sea más grande que el contenedor */
+            height: auto; /* Mantiene la relación de aspecto de la imagen */
+            border-radius: 8px; /* Opcional: agrega bordes redondeados */
+        }
+        .section {
+            padding: 5rem 2rem;
+            color: #002f69;
+        }
+
+        .section h2 {
+            color: #1f28a2;
+        }
+
+        .section p {
+            color: #4b6570;
+        }
+
+        .section-background {
+            background-color: #c4cdd7;
+        }
+
+        .card {
+            width: 300px;
+            margin: 10px auto;
+        }
+
+        .card p {
+            font-size: 1.2rem; /* Disminución del tamaño de letra en las cartas */
+        }
+
+        .card-title {
+            font-size: 1.5rem; /* Asegura que todas las cartas tengan el mismo tamaño de título */
+        }
+
+        .dropdown-menu, .dropdown-item {
+            font-size: 0.875rem;
+        }
+
+        .contact-section {
+            padding: 5rem 2rem;
+            background-color: #c4cdd7;
+            color: #002f69;
+        }
+
+        .contact-info {
+            margin-top: 2rem;
+        }
+
+        .contact-info p {
+            font-size: 1.25rem;
+        }
+
+        .contact-info .icon {
+            max-width: 20px;
+            height: auto;
+            margin-right: 0.5rem;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <!-- WhatsApp Icon -->
+    <a href="https://wa.me/51259094" class="whatsapp_float" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="50px">
+    </a>
+
+    <!-- Inicio del encabezado -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/Logo Azul Png.png" alt="Logo">
+            Propiedades en Xela
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProyectos" role="button" data-bs-toggle="dropdown" aria-expanded="false">Proyectos</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownProyectos">
+                        <li><a class="dropdown-item" href="villa-rosel.html">Villa Rosel</a></li>
+                        <li><a class="dropdown-item" href="plaza-cani.html">Plaza Cañí</a></li>
+                        <li><a class="dropdown-item" href="colonia-beneficio.html">Colonia El Beneficio</a></li>
+                        <li><a class="dropdown-item" href="bella-terra.html">Bella Terra</a></li>
+                        <li><a class="dropdown-item" href="andorra.html">Andorra</a></li>
+                        <li><a class="dropdown-item" href="villa-cavalo.html">Villa Cavalo</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownOtrasPropiedades" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Otras Propiedades
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownOtrasPropiedades">
+                        <li><a class="dropdown-item" href="lote-villa-soler.html">Lote en condominio Villa Soler</a></li>
+                        <li><a class="dropdown-item" href="lote-prados-san-lucas.html">Lote en Condominio Prados de San Lucas</a></li>
+                        <li><a class="dropdown-item" href="lote-prados-del-encinal.html">Lote en Residenciales Prados del Encinal</a></li>
+                   
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quienes-somos.html">¿Quiénes somos?</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Fin del menú de navegación -->
+
+    <!-- Inicio del contenido principal con imagen de fondo -->
+    <header class="header-content">
+        <div class="header-text container">
+            <h1>Invierte con Nosotros</h1>
+            <p>Grupo Inmobiliario</p>
+            <a href="informacion.html" class="btn btn-primary">Más Información</a>
+        </div>
+    </header>
+    <!-- Fin del contenido principal -->
+
+    <!-- Sección de Proyectos -->
+    <section class="section bg-light text-center">
+        <div class="container">
+            <div class="row">
+                <h1>Nuestros Proyectos</h1>
+                <!-- Proyecto 1: Villa Rosel -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="villa-rosel.html">
+                            <img src="img/Villa Rosel (PNG) (1).png" class="card-img-top" alt="Villa Rosel">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">A solo pasos de Interplaza Xela, comienza la vida que siempre soñaste. Lotes urbanizados con todo lo que necesitas, en un entorno clásico y seguro.</p>
+                            <a href="villa-rosel.html" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 2: Plaza Cañí -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="plaza-cani.html">
+                            <img src="img/Logo Plaza Cañí.png" class="card-img-top" alt="Plaza Cañí">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">Tu hogar y negocio en un solo lugar. Vive la comodidad de tener todo a tu alcance: área residencial, empresarial y plaza comercial en el corazón de Salcajá.</p>
+                            <a href="plaza-cani.html" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 3: Colonia El Beneficio -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="colonia-beneficio.html">
+                            <img src="img/Logo El beneficio.png" class="card-img-top" alt="Colonia El Beneficio">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">Construye tu hogar con total libertad. Lotes residenciales listos para tu proyecto, en una ubicación que combina historia y proyección futura.</p>
+                            <a href="colonia-beneficio.html" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Proyecto 4: Bella Terra -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="bella-terra.html">
+                            <img src="img/Bella Terra Logo.png" class="card-img-top" alt="Bella Terra">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">Un proyecto residencial en Quetzaltenango con casas modernas en salcaja, Estrena casa este año.</p>
+                            <a href="bella-terra.html" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 5: Andorra -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="andorra.html">
+                            <img src="img/Logo (1).png" class="card-img-top" alt="Andorra">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">Ofrece oficinas modernas en Quetzaltenango, ideal para empresas y emprendedores que buscan un espacio funcional y bien ubicado.</p>
+                            <a href="andorra.html" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 6: Villa Cavalo -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="villa-cavalo.html">
+                            <img src="img/Villa Caválo Logo.png" class="card-img-top" alt="Villa Cavalo">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">Experimenta un estilo de vida único en un lugar donde la naturaleza se mezcla con la elegancia urbana. Lotes disponibles con financiamiento directo.</p>
+                            <a href="villa-cavalo.html" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Contacto</h2>
+                    <div class="contact-info">
+                        <p>
+                            <img src="img/Correo.png" alt="Icono Correo" class="icon"> 
+                            Correo: propiedadesenxela7@gmail.com
+                        </p>
+                        <p>
+                            <img src="img/Telefono.png" alt="Icono Teléfono" class="icon"> 
+                            Teléfono: 7793-7623 / 4741-5622
+                        </p>
+                        <p>
+                            Dirección de oficina: Avenida Las Américas 7-62 Torre Pradera Xela, 8vo nivel, oficina 801 - 802, zona 3, Quetzaltenango
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/Logo Azul Png.png" alt="Imagen de Contacto" class="contact-image">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/PdJ32pLYsdEsBiwq/?mibextid=LQQJ4d" target="_blank">
+                            <img src="img/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/propiedadesenxela?igsh=MWNqYzlsdmR5bzJ2NA==" target="_blank">
+                            <img src="img/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.tiktok.com/@propiedadesenxela3?_t=8pRaPeivrGQ&_r=1" target="_blank">
+                            <img src="img/Tik Tok Icon.png" alt="Tik Tok">
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=%2B50251259094&context=ARCUrqUZ92iB5otnn_P-yowuthA3ArrrAaFVzUjdjmHFghNN39NssWxKENVlcXH_0a4xFPap5ZMXHPMDFBiJD3FJ-aUspo6LiBc3xvduVvLi6GKyK_iOZ6Rf5W-ml06R8fZZGfz6LW62rnNGrhfVgo0HSA&source=FB_Page&app=facebook&entry_point=page_cta&ai=" target="_blank">
+                            <img src="img/whatsapp_733641.png" alt="WhatsApp">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+ 
+                                                                                                                       
+    
+   
+
+    
+    <!-- Scripts de Bootstrap -->
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
